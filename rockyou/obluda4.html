@@ -1,48 +1,47 @@
-<html>
-<head>
+<!DOCTYPE html>
+ <html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Personal Information</title>
+        <script src="https://cdn.tailwindcss.com"></script>
+    </head>
+    <body class="flex justify-center mt-[10px">
+      
+        <div class="mt-[100px] flex justify-center w-[450px] h-[500px] shadow-lg m-2 rounded-md bg-gradient-to-r from-cyan-500 to-blue-500">
+          
+          <form class=" text-white " action="" method="post">
 
-</head>
-<body>
+            <h1 class="text-3xl mt-4">Personal Information</h1>
 
-<form action="" method="post">
-
- 
-
-<br>
-<h3>Enter Your First Name:</h3><input type="text" placeholder="first name"/>
-<br>
-<h3>Enter Your Last Name:</h3><input type="text" placeholder="last name"/>
-  <br>      
-<h3>Enter Your Father's Name:</h3><input type="text" placeholder="father's name"/>
-<br>
-<h3>Enter Your Age:</h3><input type="number" min="1" max="100" />
-<br>
-<h3>Enter Your Date Of Birth:</h3><input type="date"/>
-<br>
-<h3>Enter Your State:</h3><select id="states" >
-
-<option>Arunachal pradesh</option>
-<option>Assam</option>
-<option>Delhi</option>
-<option>Mumbai</option>
-<option>Tamlinadu</option>
-<option>Hydrabad</option>
-<option>Madhya pradesh</option>
-<option>Rajesthan</option>
-<option>Uttar pradesh</option>
-</select>
-
-<br>
-<br>
-<br>
-<h2>Enter Your Email:</h2><input type="text" placeholder="@email.com"/>
-<h2>Enter Your Mobie Number:</h2><input type="text" placeholder="number"/>
-<br>
-<h3>Enter Your File:</h3><input type="file" />
-<br>
-
-<h3>About You:</h3><textarea rows=10 cols=40> placeholder="Enter your text" </textarea>
-
-<button> Sign Up! </button>
-</body>
-<html>
+            
+            <br>
+            <h3>Adhar Number:</h3><input class="rounded-md " type="text" placeholder="0000-0000-0000-0000"/>
+              <br>      
+            <h3>PAN Number:</h3><input class="rounded-md " type="text" placeholder="Enter your PAN Number"/>
+            <br>
+            <h3>Bank Account Number:</h3><input class="rounded-md " type="text" placeholder="xxxxxxxxxxxx" />
+            <br>
+            <h3>Religion:</h3><select class="rounded-md text-slate-500" id="religion" >
+              <option><Select:disabled>Select</Select:disabled></option>
+              <option>Hindu</option>
+              <option>Muslim</option>
+              <option>Sikh</option>
+              <option>Cristian</option>
+              <option>Other</option>
+              
+              </select>
+            <br>
+            <h3>Address:</h3><input class="rounded-md " type="text" placeholder="Enter your Address"/>
+            <br>
+            <h3>City:</h3><input class="rounded-md " type="text" placeholder="Enter your City Name"/>
+            <br>
+            <h2>Pincode:</h2><input class="rounded-md " type="text" placeholder="Enter Pincode"/>
+            <br>
+            
+            <br>
+            <a href="index.html" ><button class="bg-white text-black p-1 ml-[200px] rounded-md">Submit</button></a>
+          </form>            
+          
+          </div>
+    </body>
+</html>
