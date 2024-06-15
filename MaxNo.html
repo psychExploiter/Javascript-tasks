@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<body>
+  <h1>Enter Number 1</h1>
+  <input type="number" id="no1" />
+  <h1>Enter Number 2</h1>
+  <input type="number" id="no2" />
+  <br>
+  <button type="button" onclick="compareNumbers()">submit</button>
+  <p id="result"></p>
+  <script>
+    alert('Task no.4')
+    function compareNumbers() {
+      const num1 = parseFloat(document.getElementById("no1").value);
+      const num2 = parseFloat(document.getElementById("no2").value);
+
+      let resultMessage;
+  
+      if (num1 === num2) {
+        resultMessage = "The numbers is equal";
+      } else if (num1 > num2) {
+        resultMessage = "Number 1 is greater";
+      } else {
+        resultMessage = "Number 2 is greater";
+      }
+
+      
+      if (isNaN(num1) || isNaN(num2)) {
+        resultMessage = "Please enter valid number ;)";
+      }
+
+      document.getElementById("result").textContent = resultMessage;
+    }
+  </script>
+</body>
+</html>
