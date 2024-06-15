@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A^3 + B^3 Calculator</title>
+</head>
+<body>
+    <h1>A^3 + B^3 Calculator</h1>
+    <label for="numA">Enter value for A:</label>
+    <input type="number" id="numA" required><br>
+    <label for="numB">Enter value for B:</label>
+    <input type="number" id="numB" required><br>
+    <button onclick="calculate()">submit</button>
+    <p id="result"></p>
+
+    <script>
+    function calculate() {
+      
+      const numA = parseFloat(document.getElementById("numA").value);
+      const numB = parseFloat(document.getElementById("numB").value);
+
+    
+      if (isNaN(numA) || isNaN(numB)) {
+        alert("Please enter valid numbers!");
+        return;
+      }
+
+      const result = Math.pow(numA, 3) + Math.pow(numB, 3);
+
+      document.getElementById("result").textContent = `A^3 + B^3 = ${result}`;
+    }
+    </script>
+</body>
+</html>
