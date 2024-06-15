@@ -1,0 +1,38 @@
+<html>
+
+<body>
+  <h1>Maths</h1>
+  <input type="number" id="M" />
+  <h1>Science</h1>
+  <input type="number" id="S" />
+  <h1>Hindi</h1>
+  <input type="number" id="H" />
+  <h1>English</h1>
+  <input type="number" id="E" />
+  <h1>Social Studies</h1>
+  <input type="number" id="So" />
+
+  <br>
+  <button type="submit">Calculate Percentage</button>
+  <p id="result"></p>
+
+  <script>
+    alert('Task No.3')
+    function calculatePercentage() {
+      const math = parseFloat(document.getElementById("M").value);
+      const science = parseFloat(document.getElementById("S").value);
+      const hindi = parseFloat(document.getElementById("H").value);
+      const english = parseFloat(document.getElementById("E").value);
+      const socialStudies = parseFloat(document.getElementById("So").value);
+
+      const total = math + science + hindi + english + socialStudies;
+      const percentage = (total / 500) * 100;
+
+      const resultElement = document.getElementById("result");
+      resultElement.textContent = `Your percentage is: ${percentage.toFixed(2)}%`;
+    }
+
+    document.querySelector("button").addEventListener("click", calculatePercentage);
+  </script>
+</body>
+</html>
