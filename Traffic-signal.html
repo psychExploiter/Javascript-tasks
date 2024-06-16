@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Traffic Light Simulator</title>
+  <script>
+    function changeLight(color) {
+      document.getElementById('Signal').style.backgroundColor = color;
+      document.getElementById('Text').innerHTML = color === "red" ? "Stop" : "Go";
+    }
+  </script>
+</head>
+<body>
+  <div id="Signal" style="width: 200px; height: 200px;"></div>
+  <p id="Text"></p>
+  <button onclick="changeLight('red')">Stop</button>
+  <button onclick="changeLight('green')">Go</button>
+</body>
+</html>
