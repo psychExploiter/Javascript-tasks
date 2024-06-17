@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Month Selector</title>
+   <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <a href="index.html">
+        <div class="bg-[#17252A] ml-9 mt-2 " style="background-color: #17252A; color: white; width: 50px; padding: 5px; border-radius: 5px;"> <strong> Back </strong></div>
+    </a>
+
+   <br>
+    <div>
+        <p class="font-extrabold ml-9"> Enter number of month:<input id="number"  class="border-current bg-slate-300 rounded-lg ml-5"/>
+    </p>
+    <button onclick="birthmonth()" class="bg-[#133C55] text-white text-extrabold rounded-full ml-[500px] mt-5 p-1 mb-5">submit</button>
+</div>
+
+<ul class=" flex inline space-x-10 ml-9 mt-5 mb-5">
+
+<div id="month1" class="bg-blue-100 text-[#133C55] font-extrabold" style="width: 100px; padding: 10px; border-radius: 10px;">January</div>
+<div id="month2" class="bg-blue-100 text-[#133C55] font-extrabold" style="width: 100px; padding: 10px; border-radius: 10px;">February</div>
+<div id="month3" class="bg-blue-100 text-[#133C55] font-extrabold" style="width: 100px; padding: 10px; border-radius: 10px;">March</div>
+<div id="month4" class="bg-blue-100 text-[#133C55] font-extrabold" style="width: 100px; padding: 10px; border-radius: 10px;">April</div>
+</ul>
+
+<ul class=" flex inline space-x-10 ml-9 mb-5">
+<div id="month5" class="bg-blue-100 text-[#133C55] font-extrabold"  style="width: 100px; padding: 10px; border-radius: 10px;" >May</div>
+<div id="month6" class="bg-blue-100 text-[#133C55] font-extrabold" style="width: 100px; padding: 10px; border-radius: 10px;" >June</div>
+<div id="month7" class="bg-blue-100 text-[#133C55] font-extrabold" style="width: 100px; padding: 10px; border-radius: 10px;" >July</div>
+<div id="month8" class="bg-blue-100 text-[#133C55] font-extrabold" style="width: 100px; padding: 10px; border-radius: 10px;">August</div>
+</ul>
+
+<ul class=" flex inline space-x-10 ml-9 mb-5">
+<div id="month9" class="bg-blue-100 text-[#133C55] font-extrabold" style="width: 100px; padding: 10px; border-radius: 10px;" >September</div>
+<div id="month10" class="bg-blue-100 text-[#133C55] font-extrabold" style="width: 100px; padding: 10px; border-radius: 10px;" >October</div>
+<div id="month11" class="bg-blue-100 text-[#133C55] font-extrabold" style="width: 100px; padding: 10px; border-radius: 10px;" >November</div>
+<div id="month12" class="bg-blue-100 text-[#133C55] font-extrabold" style="width: 100px; padding: 10px; border-radius: 10px;" >December</div>
+</ul>
+
+<script>
+function birthmonth()
+{
+  var xyz = parseInt(document.getElementById("number").value)
+  var month;
+
+ switch(xyz){
+     case 1:
+        month = "January"
+        document.getElementById("month1").style.backgroundColor = "#133C55"
+       
+        document.getElementById("month1").style.color = "white"  
+        
+        
+
+break;
+case 2:
+    month ="February";
+    document.getElementById("month2").style.backgroundColor = "#133C55"
+      
+        document.getElementById("month2").style.color = "white"  
+    break;
+
+    case 3:
+    month ="March";
+    document.getElementById("month3").style.backgroundColor = "#133C55"
+       
+        document.getElementById("month3").style.color = "white"  
+    break;
+
+    case 4:
+    month ="April";
+    document.getElementById("month4").style.backgroundColor = "#133C55"
+        
+        document.getElementById("month4").style.color = "white"  
+    break;
+
+    case 5:
+    month ="May";
+    document.getElementById("month5").style.backgroundColor = "#133C55"
+       
+        document.getElementById("month5").style.color = "white"  
+    break;
+
+
+    case 6:
+    month ="June";
+    document.getElementById("month6").style.backgroundColor = "#133C55"
+       
+        document.getElementById("month6").style.color = "white"  
+    break;
+
+    case 7:
+    month ="July";
+    document.getElementById("month7").style.backgroundColor = "#133C55"
+
+        document.getElementById("month7").style.color = "white"  
+    break;
+
+
+    case 8:
+    month ="August";
+    document.getElementById("month8").style.backgroundColor = "#133C55"
+       
+        document.getElementById("month8").style.color = "white"  
+    break;
+
+    case 9:
+    month ="September";
+    document.getElementById("month9").style.backgroundColor = "#133C55"
+        
+        document.getElementById("month9").style.color = "white"  
+    break;
+
+    case 10:
+    month ="october";
+    document.getElementById("month10").style.backgroundColor = "#133C55"
+      
+        document.getElementById("month10").style.color = "white"  
+    break;
+
+    case 11:
+    month ="November";
+    document.getElementById("month11").style.backgroundColor = "#133C55"
+        
+        document.getElementById("month11").style.color = "white"  
+    break;
+
+
+    case 12:
+    month ="December";
+    document.getElementById("month12").style.backgroundColor = "#133C55"
+       
+        document.getElementById("month12").style.color = "white"  
+    break;
+    
+
+ 
+
+ }
+
+
+}
+
+
+
+</script>
+
+
+
+</body>
+
+</html>
