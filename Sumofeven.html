@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sum of Even Digits</title>
+    <script type="text/javascript">
+        function sumEvenDigits(num) {
+            let strNum = num.toString();
+            let sum = 0;
+
+            for (let char of strNum) {
+                let digit = parseInt(char);
+                if (digit % 2 === 0) {
+                    sum += digit;
+                }
+            }
+
+            return sum;
+        }
+
+        function calculateSumOfEvenDigits() {
+            let num = document.getElementById("numberInput").value;
+            let sum = sumEvenDigits(num);
+
+            document.getElementById("result").innerText = "Sum of even digits in " + num + " is: " + sum;
+        }
+    </script>
+</head>
+<body>
+    <h1>sum of Even digits</h1>
+    <label for="numberInput">Enter a number(s)):</label>
+    <input type="text" id="numberInput">
+    <button onclick="calculateSumOfEvenDigits()">Submit</button>
+    <p id="result"></p>
+</body>
+</html>
