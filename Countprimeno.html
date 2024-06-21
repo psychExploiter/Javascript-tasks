@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Prime Number Counter</title>
+    <script type="text/javascript">
+        function isPrime(num) {
+            if (num <= 1) return false;
+            if (num <= 3) return true;
+            
+            if (num % 2 === 0 || num % 3 === 0) return false;
+            
+            for (let i = 5; i * i <= num; i += 6) {
+                if (num % i === 0 || num % (i + 2) === 0) return false;
+            }
+            return true;
+        }
+
+        function countPrimes() {
+            let n = parseInt(document.getElementById("nInput").value);
+            let count = 0;
+
+            for (let i = 1; i <= n; i++) {
+                if (isPrime(i)) {
+                    count++;
+                }
+            }
+            
+            document.getElementById("result").innerText = "Number of prime numbers from 1 to " + n + " is: " + count;
+        }
+    </script>
+</head>
+<body>
+    <h1>Count prime Number</h1>
+    <label for="nInput">value of n:</label>
+    <input type="number" id="nInput">
+    <button onclick="countPrimes()">Count the no.</button>
+    <p id="result"></p>
+</body>
+</html>
