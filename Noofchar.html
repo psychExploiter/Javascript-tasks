@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Number of Characters in a Number</title>
+    <script type="text/javascript">
+        function countCharacters() {
+            let num = document.getElementById("numberInput").value;
+            let length = num.length;
+
+            
+            if (num[0] === '-') {
+                length--; 
+            }
+
+            document.getElementById("result").innerText = "Number of characters in the given number is: " + length;
+        }
+    </script>
+</head>
+<body>
+    <h1>Number of Characters in a Number</h1>
+    <label for="numberInput">Enter a number:</label>
+    <input type="text" id="numberInput">
+    <button onclick="countCharacters()">submit</button>
+    <p id="result"></p>
+</body>
+</html>
