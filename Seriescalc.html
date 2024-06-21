@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Series Calculator</title>
+    <script type="text/javascript">
+        function calculateSeries() {
+            let x = parseFloat(document.getElementById("xInput").value);
+            let n = parseInt(document.getElementById("nInput").value);
+            let result = 0;
+            
+            for (let i = 0; i <= n; i++) {
+                result += Math.pow(x, i);
+            }
+            
+            document.getElementById("result").innerText = "Result of the series is: " + result;
+        }
+    </script>
+</head>
+<body>
+    <h1>Calculate Series</h1>
+    <label for="xInput">value of x:</label>
+    <input type="number" id="xInput" step="any"><br><br>
+    <label for="nInput">value of n:</label>
+    <input type="number" id="nInput"><br><br>
+    <button onclick="calculateSeries()">Submit</button>
+    <p id="result"></p>
+</body>
+</html>
