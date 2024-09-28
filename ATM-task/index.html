@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ATM Machine</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <script src="atm.js"></script>
+</head>
+<body class="bg-gray-100 h-screen" >
+  <div id="main" class="flex items-center justify-center h-full">
+
+    <div class="bg-blue-400 rounded-md text-center p-4">
+      <div> <h1 class="font-bold text-white mb-1">Welcome to ATM</h1> </div>
+      <div> <input id="pin" class="rounded-md" type="password" placeholder="Enter your PIN"/></div>
+      <div><button id="enter" class="rounded-full mt-2 p-1 bg-blue-600 text-white font-bold" type="submit" onclick="checkpwd()">Enter</button></div>
+    </div>
+   
+  </div>
+</body>
+</html>
